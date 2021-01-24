@@ -1,15 +1,19 @@
 {
-  "name": "node",
+  "name": "minecraft-pos-sniffer",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Minecraft JE proxy",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
-  "author": "",
+  "author": "RedSpirit",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.5.1",
     "minecraft-protocol": "^1.22.0",
     "node-tcp-proxy": "0.0.20"
+  },
+  "devDependencies": {
+    "electron": "^11.2.1"
   }
 }
