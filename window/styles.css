@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Minecraft;
+    src: url(minecraft.ttf);
+}
+
+body {
+    font-family: Minecraft;
+}
+
+input {
+    font-family: Minecraft;
+}
+
+button {
+    font-family: Minecraft;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.color-red {
+    color: red;
+}
+.color-green {
+    color: green;
+}
+.info-text{
+    font-size: 24px;
+}

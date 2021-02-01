@@ -12,10 +12,11 @@
 
     <div>
         <p>
-            Локальный порт: <input type="number" value="9000" id="form-port">
+            Локальный порт: <input type="number" value="9000" id="form-port" style="width: 70px;">
         </p>
         <p>
-            Сервер: <input type="text" value="localhost:25565" id="form-server">
+            Сервер: <input type="text" value="dog.satoko.org:25565" id="form-server" style="width: 170px;">
+            <!--Сервер: <input type="text" value="localhost:25565" id="form-server" style="width: 170px;">-->
         </p>
 
         <p>
@@ -26,9 +27,12 @@
 
     <hr>
 
+    <div class="info-text" style="margin-bottom: 10px">
+        <div style="margin-bottom: 10px"><span id="pos-x"></span>, <span id="pos-z"></span></div>
+        <div><span id="pos-y"></span></div>
+    </div>
     <div>
-        <div>Позиция: <span id="pos-x"></span>, <span id="pos-z"></span></div>
-        <div>Высота: <span id="pos-y"></span></div>
+        Время: <span id="time-num">00:00</span> (<span id="time-text">-</span>)
     </div>
 
 </div>

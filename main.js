@@ -6,14 +6,17 @@ let win = null;
 
 function createWindow () {
     win = new BrowserWindow({
-        width: 800,
-        height: 600,
+        width: 300,
+        height: 300,
         webPreferences: {
             nodeIntegration: true
-        }
+        },
+        //frame: false
     });
 
     win.loadFile('window/index.html');
+
+    win.setMenu(null);
 
     //win.webContents.openDevTools();
 
@@ -35,8 +38,8 @@ app.on('activate', () => {
 
 ipcMain.handle('start-proxy', (event, params) => {
 
-    mcProxy.start(params.port, params.remoteHost, params.remotePort, '1.16.5',(err, position) => {
-        win.webContents.send('update-position', {position});
+    mcProxy.start(params.port, params.remoteHost, params.remotePort, '1.16.5',(err, data) => {
+        win.webContents.send(data.name, data.data);
     });
 
 });
